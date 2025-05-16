@@ -16,28 +16,38 @@ Khả năng mở rộng linh hoạt: Dễ dàng tích hợp thêm các món ăn 
 Để bắt đầu khám phá sức mạnh của hệ thống, bạn có thể thực hiện theo các bước đơn giản sau:
 
 Bước 1: Đảm bảo bạn đã cài đặt Python phiên bản 3.8 trở lên (tải từ https://www.python.org/downloads/).
+
 Bước 2: Cài đặt Visual Studio Code (VSCode) để có môi trường phát triển tốt nhất.
+
 Bước 3: Tải mã nguồn dự án từ GitHub hoặc sao chép vào máy tính của bạn.
+
 Bước 4: Mở thư mục dự án bằng VSCode.
+
 Bước 5: Tạo và kích hoạt môi trường ảo (virtual environment) để quản lý các thư viện một cách độc lập:
 Mở Terminal (trong VSCode).
 Chạy lệnh: python -m venv venv
 Kích hoạt môi trường:
 Windows: .\venv\Scripts\activate
 macOS/Linux: source venv/bin/activate
+
 Bước 6: Cài đặt tất cả các thư viện cần thiết một cách dễ dàng bằng lệnh: pip install -r requirements.txt
 3. Khám phá cách hệ thống hoạt động:
 
 Chỉ với vài bước đơn giản, bạn có thể trải nghiệm quy trình nhận diện và thanh toán tự động:
 
 Bước 1: Đảm bảo rằng mô hình CNN đã được huấn luyện và lưu trữ với tên model.h5 trong thư mục dự án.
+
 Bước 2: Khởi chạy ứng dụng bằng lệnh: python app.py
+
 Bước 3: Giao diện trực quan sẽ xuất hiện, cho phép bạn chọn ảnh khay cơm từ thiết bị của mình.
+
 Bước 4: Hệ thống sẽ tự động thực hiện các tác vụ phức tạp:
 Phát hiện vị trí các món ăn trên khay cơm bằng công nghệ YOLO.
 Phân loại từng món ăn một cách chính xác bằng mô hình CNN.
 Hiển thị danh sách các món ăn đã nhận diện, tổng số tiền và mã QR thanh toán.
+
 Bước 5: Sử dụng ứng dụng quét mã QR trên điện thoại hoặc trình duyệt để truy cập trang thanh toán giả lập một cách nhanh chóng.
+
 4. Nền tảng công nghệ vững chắc:
 
 Dự án được xây dựng dựa trên các thư viện mạnh mẽ và phổ biến trong lĩnh vực xử lý ảnh và học máy, được liệt kê chi tiết trong file requirements.txt:
@@ -49,7 +59,7 @@ tensorflow: Framework mã nguồn mở cho việc xây dựng và huấn luyện
 Pillow: Thư viện Python Imaging Library, hỗ trợ đa dạng các định dạng ảnh.
 Ngoài ra, dự án còn tận dụng các thư viện tích hợp sẵn của Python:
 
-tkinter & tkinter.ttk: Bộ công cụ mạnh mẽ để xây dựng giao diện người dùng đồ họa trực quan.
+Gradio: Bộ công cụ mạnh mẽ để xây dựng giao diện người dùng đồ họa trực quan.
 threading: Hỗ trợ thực hiện các tác vụ đồng thời, đảm bảo giao diện mượt mà trong quá trình xử lý ảnh.
 5. Kiến trúc chương trình thông minh và linh hoạt:
 
