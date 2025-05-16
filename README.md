@@ -55,6 +55,6 @@ threading: Hỗ trợ thực hiện các tác vụ đồng thời, đảm bảo 
 
 Dự án được tổ chức một cách khoa học và dễ bảo trì với các thư mục riêng biệt cho từng loại món ăn (ví dụ: Com Trang/, Thit kho/, Trung chien/,...). Điều này không chỉ giúp quản lý dữ liệu huấn luyện hiệu quả mà còn tạo tiền đề cho việc mở rộng và cập nhật hệ thống một cách dễ dàng.
 
-Giao diện người dùng được xây dựng bằng Tkinter mang đến trải nghiệm thân thiện và trực quan. Việc ứng dụng đa luồng giúp chương trình hoạt động mượt mà, không bị gián đoạn trong quá trình xử lý ảnh phức tạp.
+Giao diện người dùng được xây dựng bằng Gradio mang đến trải nghiệm thân thiện và trực quan. Việc ứng dụng đa luồng giúp chương trình hoạt động mượt mà, không bị gián đoạn trong quá trình xử lý ảnh phức tạp.
 
 Với cấu trúc linh hoạt, dự án sẵn sàng cho việc bổ sung các món ăn mới, cập nhật bảng giá một cách nhanh chóng hoặc thậm chí tích hợp trực tiếp với camera để xử lý hình ảnh theo thời gian thực.
