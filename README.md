@@ -44,9 +44,6 @@ Bước 3: Giao diện trực quan sẽ xuất hiện, cho phép bạn chọn �
 Bước 4: Hệ thống sẽ tự động thực hiện các tác vụ phức tạp:
 Phát hiện vị trí các món ăn trên khay cơm bằng công nghệ YOLO.
 Phân loại từng món ăn một cách chính xác bằng mô hình CNN.
-Hiển thị danh sách các món ăn đã nhận diện, tổng số tiền và mã QR thanh toán.
-
-Bước 5: Sử dụng ứng dụng quét mã QR trên điện thoại hoặc trình duyệt để truy cập trang thanh toán giả lập một cách nhanh chóng.
 
 4. Nền tảng công nghệ vững chắc:
 
