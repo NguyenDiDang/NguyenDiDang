@@ -5,23 +5,19 @@ import tensorflow as tf
 from ultralytics import YOLO
 from PIL import Image
 
-# Load YOLOv8 model
 yolo_model = YOLO("/kaggle/input/code-cnn-va-yolov8/yolov8trained.pt")
 
-# Load TensorFlow Lite model
 interpreter = tf.lite.Interpreter(model_path="/kaggle/input/code-cnn-va-yolov8/code_cnn_model.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 input_shape = input_details[0]['shape']
 
-# Danh sách nhãn món ăn
 class_names = [
     "Ca hu kho", "Canh cai", "Canh chua", "Com trang", "Dau hu sot ca",
     "Ga chien", "Rau muong xao", "Thit kho", "Thit kho trung", "Trung chien"
 ]
 
-# Bảng giá
 food_prices = {
     "Ca hu kho": 10000,
     "Canh cai": 8000,
@@ -73,7 +69,7 @@ def classify_image(image):
 
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
     gr.Markdown("""
-    <h1 style='text-align: center;'>🍽️ Hệ Thống Tự Động Nhận Diện Món Ăn & Tính Tiền</h1>
+    <h1 style='text-align: center;'> Hệ Thống Tự Động Nhận Diện Món Ăn & Tính Tiền căn tin</h1>
     <p style='text-align: center;'>Ứng dụng YOLOv8 kết hợp CNN để phát hiện và phân loại món ăn từ ảnh khay cơm. Hiển thị tên món, giá và tổng tiền.</p>
     """)
 
